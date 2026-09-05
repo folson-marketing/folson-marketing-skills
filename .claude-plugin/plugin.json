@@ -6,5 +6,6 @@
     "name": "Folson Marketing"
   },
   "homepage": "https://github.com/folson-marketing/folson-marketing-skills",
-  "repository": "https://github.com/folson-marketing/folson-marketing-skills"
+  "repository": "https://github.com/folson-marketing/folson-marketing-skills",
+  "license": "MIT"
 }

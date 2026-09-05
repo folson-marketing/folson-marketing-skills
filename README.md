@@ -69,4 +69,4 @@ Edit `skills/<name>/SKILL.md` and nothing else. There is deliberately only one c
 
 ## License
 
-No license file is included yet. This repo is public, but public visibility alone does not grant anyone reuse rights. Add a `LICENSE` file (for example MIT, if you want to explicitly permit others to copy and adapt these skills) once you have decided on terms.
+Released under the [MIT License](LICENSE). You are free to copy, adapt, and redistribute these skills, including commercially, as long as the license notice stays with them.
