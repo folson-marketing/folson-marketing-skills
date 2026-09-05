@@ -1,0 +1,10 @@
+{
+  "name": "folson-marketing-skills",
+  "description": "Reusable AI agent skills built for Folson Marketing Agency's work, starting with a six-step GTM research procedure.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Folson Marketing"
+  },
+  "homepage": "https://github.com/folson-marketing/folson-marketing-skills",
+  "repository": "https://github.com/folson-marketing/folson-marketing-skills"
+}

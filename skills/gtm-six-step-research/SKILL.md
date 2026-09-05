@@ -240,3 +240,13 @@ Write this exactly as before: prose paragraphs, tables where they help, no bulle
 ### Delivery
 
 Deliver both `report.html` and `report.md` to the user with SendUserFile, `report.html` first. If a client folder is connected, commit both there as well. Finish with three sentences: the core message, the channel, and the metric, so the user can act without opening either file.
+
+## Running outside Claude
+
+This procedure was written for Claude, so a few tool names above are Claude-specific. If you are running it in ChatGPT, Codex, or another agent, read these substitutions in as you go. Everything else, the six-step framework, the research plan for each step, the report structure, and the standing rules, applies exactly as written.
+
+- "Apify MCP" and named actors (`search-actors`, `call-actor`, `trudax/reddit-scraper-lite`, and so on): use whichever browsing, search, or connected data tool your platform has instead. If none is available, do the research from your own knowledge and reasoning and say so plainly rather than inventing data, exactly as the fallback rule in the standing rules requires.
+- "WebSearch" and "WebFetch": your platform's own web search and page-fetch tools.
+- "AskUserQuestion": ask the clarifying questions directly in the conversation, in the same two-or-three-round structure.
+- "SendUserFile": present the finished files to the user for download in whatever way your platform supports (an attached file, a canvas, or a code block).
+- "The Artifact tool" and "a connected client folder": skip these. They are Claude delivery options. Deliver both report files directly to the user instead.
