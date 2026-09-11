@@ -6,7 +6,7 @@ Reusable AI agent skills built for Folson Marketing Agency's work. Every skill i
 
 | Skill | What it does |
 |---|---|
-| [`gtm-six-step-research`](skills/gtm-six-step-research/SKILL.md) | Runs a full go-to-market research pass on a new product or idea: total market, segmentation, positioning and competitor sweep, core message, one channel, and a monitor and iterate metric, ending in a styled HTML report plus a supplemental Markdown report. |
+| [`gtm-seven-part-research`](skills/gtm-seven-part-research/SKILL.md) | Runs a full go-to-market research pass on a new product or idea through seven parts: user insight, product design, brand positioning with a full competitor sweep, content strategy, marketing channels, conversion strategy, and path optimization, ending in a styled HTML report plus a supplemental Markdown report. |
 
 Each `SKILL.md` is written as an instruction set, not documentation. Read it top to bottom before using it. Every skill ends with a "Running outside Claude" section that maps the handful of Claude-specific tool names onto whatever tools your platform has.
 
@@ -19,7 +19,7 @@ Each `SKILL.md` is written as an instruction set, not documentation. Read it top
 /plugin install folson-marketing-skills@folson-marketing-skills
 ```
 
-Skills then appear namespaced, for example `/folson-marketing-skills:gtm-six-step-research`, and Claude also picks them up automatically when a task matches a skill's description. Run `/plugin marketplace update` later to pull new versions.
+Skills then appear namespaced, for example `/folson-marketing-skills:gtm-seven-part-research`, and Claude also picks them up automatically when a task matches a skill's description. Run `/plugin marketplace update` later to pull new versions.
 
 **Claude Code, Codex, Cursor, and 70+ other agents** with the open-source `skills` installer:
 
@@ -37,7 +37,7 @@ Swap `--agent claude-code` for `--agent codex` or another supported agent. Drop 
 
 claude.ai has no URL import. Upload a ZIP of the skill folder:
 
-1. Download or clone this repo and zip the skill folder you want, for example `skills/gtm-six-step-research/` (the ZIP must contain the folder, with `SKILL.md` directly inside it).
+1. Download or clone this repo and zip the skill folder you want, for example `skills/gtm-seven-part-research/` (the ZIP must contain the folder, with `SKILL.md` directly inside it).
 2. In claude.ai, open Customize, then Skills, click the "+" button, choose "Create skill", then "Upload a skill", and upload the ZIP.
 3. Toggle the skill on. It is then available in every conversation on that account.
 
@@ -54,7 +54,7 @@ claude.ai has no URL import. Upload a ZIP of the skill folder:
 1. Create a new GPT (Explore GPTs, then Create).
 2. In the Configure tab, paste this into the Instructions field. The full procedure goes in Knowledge, not here, because the Instructions field is length limited:
 
-   > You are a senior GTM strategist. Follow the attached document "SKILL.md" as your complete operating procedure whenever the user asks for go-to-market research, a GTM strategy, or help positioning a new product or idea. Read the whole document before starting, including its "Running outside Claude" section. Do the six steps in order, in the format it specifies, and produce both an HTML report and a Markdown report exactly as it describes.
+   > You are a senior GTM strategist. Follow the attached document "SKILL.md" as your complete operating procedure whenever the user asks for go-to-market research, a GTM strategy, or help positioning a new product or idea. Read the whole document before starting, including its "Running outside Claude" section. Do the seven parts in order, in the format it specifies, and produce both an HTML report and a Markdown report exactly as it describes.
 
 3. Under Knowledge, upload the skill's `SKILL.md`.
 4. Optionally, if you use GPT Actions, wire an Action to Apify's API (or another data provider) and tell the GPT in Instructions that the "Apify MCP" calls in the document map to that Action. Without one, the GPT should use its own browsing tool and say plainly when it could not verify something.
