@@ -1,7 +1,7 @@
 {
   "name": "folson-marketing-skills",
-  "description": "Reusable AI agent skills built for Folson Marketing Agency's work, starting with a seven-part GTM research procedure.",
-  "version": "2.1.0",
+  "description": "Reusable AI agent skills built for Folson Marketing Agency's work, including seven-part GTM research procedures for software and for e-commerce D2C brands.",
+  "version": "2.2.0",
   "author": {
     "name": "Folson Marketing"
   },
